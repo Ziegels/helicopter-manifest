@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helicopter Manifest</title>
+    <link rel="stylesheet" href="style-manifest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Helicopter Manifest</h1>
+        
+        <section id="squad">
+            <section id="squad">
+                <h2>Squad Members</h2>
+                <button id="toggleAll">Toggle All</button>
+                <div id="squadContainer">
+                    <div class="squad-section" data-squad="alpha">
+                        <h3 class="squad-header">Alpha ▼</h3>
+                        <div class="squad-content"></div>
+                    </div>
+                    <div class="squad-section" data-squad="bravo">
+                        <h3 class="squad-header">Bravo ▼</h3>
+                        <div class="squad-content"></div>
+                    </div>
+                    <div class="squad-section" data-squad="charlie">
+                        <h3 class="squad-header">Charlie ▼</h3>
+                        <div class="squad-content"></div>
+                    </div>
+                    <div class="squad-section" data-squad="delta">
+                        <h3 class="squad-header">Delta ▼</h3>
+                        <div class="squad-content"></div>
+                    </div>
+                </div>
+                <h3>Total Selected Squad Weight: <span id="totalSquadWeight">0</span> lbs</h3>
+            </section>
+            
+        
+        
+        <section id="gear">
+            <h2>Gear List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Weight per Item (lbs)</th>
+                        <th>Amount</th>
+                        <th>Total Weight</th>
+                    </tr>
+                </thead>
+                <tbody id="gearList">
+                    <!-- Items will be added dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+        <button id="generateManifest">Create Manifest</button>
+        <textarea id="manifestOutput" readonly></textarea>
+        <button id="copyManifest">Copy Manifest</button>
+    </div>
+
+    <script src="script-manifest.js"></script>
+</body>
+</html>
